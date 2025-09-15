@@ -1,6 +1,6 @@
 // List of classmates
 const classmates = [
-    { name: "Abir Saafi", image: "images/Abir Saafi.jpg", portfolio: "alice.html" },
+    { name: "Mensi Mohamed Amine", image: "profiles/Mensi Mohamed Amine/mensi.jpg", portfolio: "index.html" },
     // Add more classmates as needed
 ];
 
