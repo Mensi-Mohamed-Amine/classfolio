@@ -1,0 +1,17 @@
+*{
+    padding: 0%;
+    margin: 0%;
+}
+body{
+    min-height: 1vh;
+    background-color: aqua;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.title{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    font-size: large;
+    color: black;
+}
