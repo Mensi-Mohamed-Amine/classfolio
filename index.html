@@ -3,10 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RockPaperCissor</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
 </head>
 <body>
-    <div class="title">Welcome to hedi01 branch!</div>
+    <div class="back">
+        <input type="button" value="Back" id="back">
+    </div>
+        <div class="object">
+        </div>
+        <div class="scoreboard">
+            Computer <div class="cmpscr"> 0 </div> - <div class="usrscr"> 0 </div> User
+        </div>
+
+    <div class="initi"> 
+        <h1>
+            Welcome to RockPaperCissor game ! test your fortune
+        </h1>
+        <p>
+            <span class="intro">Game Rules :</span> The game lets the user choose a winning score between 3 and 18,
+             then plays rounds where the user picks rock, paper, or scissors, and the computer randomly picks one too;
+              rock beats scissors, scissors beats paper, and paper beats rock, 
+              while identical picks result in a draw with no points awarded; each round’s winner earns one point, 
+              and the game continues until either the user or computer reaches the chosen winning score,
+             declaring that player as the overall winner.
+        </p>
+        <p>
+        <label for="rng">Choose the game objective(3-18 points) :</label> 
+        <input type="number" value="3" min="3" max="18" id="rng" name="rng"></p>
+        <input type="button" id="start" value="start">
+    </div>
+   
+    <h1 class="title">Rock Paper Scissors</h1>
+    <div class="container">
+        <input type="button" value="Rock" id="rock" class="butt">
+        <input type="button" value="Paper" id="paper" class="butt">
+        <input type="button" value="Scissors" id="scissors" class="butt">
+        
+    </div>
+            <div class="computerchoice">
+                <span>Computer</span>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>

@@ -1,17 +1,139 @@
 *{
-    padding: 0%;
-    margin: 0%;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
 }
-body{
-    min-height: 1vh;
-    background-color: aqua;
-    display: flex;
+body {
+    background-color: aquamarine;
     justify-content: center;
     align-items: center;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    position: relative;
 }
-.title{
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1,.scoreboard {
+    font-size: 2.5rem;
+    letter-spacing: 3px;
+    text-shadow: 2px 2px 1px  red;
+}
+
+.container{
+ justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.container input[type="button"]{
+    width: 100px;
+    height: 40px;
+    padding: 10px;
+    background-color: blue;
+    border-radius: 6px;
+    color:blanchedalmond;
+}
+.container input[type="button"]:hover{
+    background-color: blanchedalmond;
+    color:blue;
+}
+.initi{
+    align-items: center;
+    justify-content:space-evenly;
+    gap: 30px;
+    flex-direction: column;
+    height: 100%;
+    display: flex; 
+    position: absolute;
+    /* align-items; */
+    padding: 40px 80px;
+}
+#start{
+    width: 300px;
+    height: 70px;
+    padding: 10px;
+    background-color: blue;
+    border-radius: 6px;
+    color:blanchedalmond;
+    transition: transform 1000ms ease;
+    cursor: pointer;
+    font-size: 2rem;
+    font-weight: bolder;
+}
+#start:hover{
+    transform: scale(0.95);
+}
+.intro{
+    color: red;
     font-weight: bold;
-    font-size: large;
-    color: black;
 }
+.back{
+    position:absolute;
+    left:0;
+    top:0;
+}
+.back input[type="button"]{
+    background-color: red;
+    color: white;
+    border-radius: 6px;
+    width: 100px;
+    height: 40px;
+    padding: 10px;
+    font-weight: bolder;
+}
+p{
+    font-weight: bold;
+    line-height: 2rem;
+}
+.object{
+    position: absolute;
+    top: 0%;
+    height:50%;
+    height: 40px;
+    width: 250px;
+    color: gold;
+    font-weight: bolder;
+    font-size: 2.5rem;
+}
+.computerchoice{
+    font-size: 2rem;
+    letter-spacing: 3px;
+    font-weight: bolder;
+
+}
+.computerchoice span{
+    font-size: 1.5rem;
+    letter-spacing: 3px;
+    text-shadow: 2px 2px 1px  red;
+    font-weight: bolder;
+}
+.scoreboard{
+    position: absolute;
+    top: 0%;
+    right: 0;
+    width: 33%;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+} 
+ .repeat{
+    z-index: 3;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background-color: red;
+    color:antiquewhite;
+    font-weight: bolder;
+    transform: translate(-50%, -50%);
+    padding: 10px 20px;
+    font-size: 1.5rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    
+ }
